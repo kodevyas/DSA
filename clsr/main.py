@@ -1,7 +1,7 @@
 import insertion_sort
 import reverse_insertion_sort
 import merge_sort
-import merge_sort_practise
+import binary_search
 def main():
     num_list = [4,3,5,2,1,6]
     new_num_list = num_list
@@ -18,9 +18,14 @@ def main():
     #print(reversed_sorted_list)
 
     # Merge sort
-    sorted_list = merge_sort.merge_sort(num_list, 0, 5) 
-    print(sorted_list)
+    #sorted_list = merge_sort.merge_sort(num_list, 0, 5) 
+    #print(sorted_list)
 
+    # Binary Search
+    num_list = [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]
+    x = 72
+    index_of_x = binary_search.binary_search(num_list, 0 , 9, x)
+    print(index_of_x)
 
 if __name__ == "__main__":
     main()
